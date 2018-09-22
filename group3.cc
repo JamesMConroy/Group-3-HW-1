@@ -9,6 +9,10 @@
 
 #include <ncurses.h>
 int main () {
+	NationalStadiumSeating();
+	AvgRainFall();
+	MagicDate();
+	DollarChange();
 
 	return 0;
 }
