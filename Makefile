@@ -1,12 +1,15 @@
 #This is a Makefile
 
-all: group3.exe
+SHELL = /bin/bash
+HEADERS = AvgRainFall.h DollarChange.h MagicDates.h NSSeating.h
+CC = g++
+CFLAGS = -g -WALL
+TARGET = group3
 
-group3.exe: group3.o
-	g++ -o group3.exe group3.o
+all: $(TARGET)
 
-group3.o: group3.cc
-	g++ -c group3.cc
+$(TARGET): $(TARGET).cc
+	$(CC) $(CFLAGS) -o $(TARGET) $(TARGET).cc
 
 clean:
-	rm group3.o group3.exe
+	$(RM) $(TARGET)
