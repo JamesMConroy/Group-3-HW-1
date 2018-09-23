@@ -1,15 +1,27 @@
 #This is a Makefile
 
 SHELL = /bin/bash
-HEADERS = AvgRainFall.h DollarChange.h MagicDates.h NSSeating.h
 CC = g++
-CFLAGS = -g -WALL
-TARGET = group3
+CFLAGS = -g -Wall
+OUTP = main.o AvgRainFall.o DollarChange.o MagicDates.o NSSeating.o
 
-all: $(TARGET)
+group3: $(OUTP)
+	g++ $(CFLAGS) -o group3 $(OUTP)
 
-$(TARGET): $(TARGET).cc
-	$(CC) $(CFLAGS) -o $(TARGET) $(TARGET).cc
+main.o: main.cpp stdafx.h
+	g++ -c main.cpp
+
+AvgRainFall.o: AvgRainFall.cpp
+	g++ -c AvgRainFall.cpp
+
+DollarChange.o: DollarChange.cpp
+	g++ -c DollarChange.cpp
+
+MagicDates.o: MagicDates.cpp
+	g++ -c MagicDates.cpp
+
+NSSeating.o: NSSeating.cpp
+	g++ -c NSSeating.cpp
 
 clean:
-	$(RM) $(TARGET)
+	rm group3 $(OUTP)

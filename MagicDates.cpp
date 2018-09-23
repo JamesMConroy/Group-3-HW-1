@@ -10,10 +10,9 @@
  *	May 14, 1970 is magic. This is because 5 * 14 = 70
  *
  *	===========================================================================*/
+#include <iostream>
 
-
-int MagicDate () {
+void MagicDate () {
 	//TODO
-	
-	return 0;
+	std::cout << "Magic Dates \n";
 }

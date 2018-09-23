@@ -7,9 +7,9 @@
 #include <iostream>
 #include "stdafx.h"
 
-#include <ncurses.h>
 int main () {
-	NationalStadiumSeating();
+	std::cout << "Main Function \n";
+	StadiumSeating();
 	AvgRainFall();
 	MagicDate();
 	DollarChange();

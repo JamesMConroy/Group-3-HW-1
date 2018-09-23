@@ -1,6 +1,12 @@
-/* This file is to place the include statements for your functions */
+//This is the projects only header file.
+//Be sure to update the prototypes below if you change the definitions
 
-#include "NSSeating.h"
-#include "AvgRainFall.h"
-#include "MagicDates.h"
-#include "DollarChange.h"
+#ifndef stdafx_h
+#define stdafx_h
+
+void AvgRainFall();
+void DollarChange();
+void MagicDate();
+void StadiumSeating();
+
+#endif
