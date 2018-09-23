@@ -10,5 +10,7 @@
 
 void AvgRainFall () {
 	//TODO
-	std::cout << "Avg rainfall \n";
+	int var;
+	std::cout << "\033[2jAvg rainfall \n";
+	std::cin >> var;
 }
