@@ -12,13 +12,9 @@
  *
  *	All values are in American Dollars
  *	===========================================================================*/
+#include <iostream>
 
-#define CLASS_A 15
-#define CLASS_B 12
-#define CLASS_C 9
-
-int NationalStadiumSeating () {
+void StadiumSeating () {
 	//TODO
-
-	return 0;
+	std::cout << "Stadium Seating\n";
 }

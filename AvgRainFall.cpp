@@ -6,8 +6,11 @@
  *	An example output is:
  *		"The average rainfall for June, July, and August was 3.72 in Washington DC."
  *	===========================================================================*/
+#include <iostream>
 
-int AvgRainFall () {
+void AvgRainFall () {
 	//TODO
-	return 0;
+	int var;
+	std::cout << "\033[2jAvg rainfall \n";
+	std::cin >> var;
 }

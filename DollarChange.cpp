@@ -8,9 +8,9 @@
  *	and half dollars.
  *
  *	===========================================================================*/
+#include <iostream>
 
-int DollarChange () {
+void DollarChange () {
 	//TODO
-	
-	return 0;
+	std::cout << "Dollar Game \n";
 }
