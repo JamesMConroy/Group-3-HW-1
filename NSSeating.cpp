@@ -8,15 +8,16 @@
  *		Class C: $9
  *
  *	The Total is displayed in fixed point notation, with two decimal points of
- *	precision. The decimal point is always displayed. 
+ *	precision. The decimal point is always displayed.
  *
  *	All values are in American Dollars
  *	===========================================================================*/
 #include <iostream>
+#include <iomanip>
 using namespace std;
-const int Aprice = 15;
-const int Bprice = 12;
-const int Cprice = 9;
+const double Aprice = 15;
+const double Bprice = 12;
+const double Cprice = 9;
 
 void StadiumSeating () {
 	bool exit = false;

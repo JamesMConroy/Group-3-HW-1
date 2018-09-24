@@ -13,7 +13,7 @@ int main () {
 	while (exit == false) {
 		int select;
 		//clear the window
-		cout << "\033[H \033[2j";
+		cout << "\033[H\033[2J";
 
 		cout << "This is Group 3's Assignment 1\n";
 		cout << "\t1 National Stadium Seating\n";
