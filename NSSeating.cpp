@@ -13,8 +13,34 @@
  *	All values are in American Dollars
  *	===========================================================================*/
 #include <iostream>
+using namespace std;
+const int Aprice = 15;
+const int Bprice = 12;
+const int Cprice = 9;
 
 void StadiumSeating () {
-	//TODO
-	std::cout << "Stadium Seating\n";
+	bool exit = false;
+	while (exit == false) {
+		int Asold, Bsold, Csold;
+		char ch;
+		cout << "\033[H \033[2J";
+		cout << "This function calculates the income from ticket sales.\n";
+		cout << "Please enter the number of class A seats sold: ";
+		cin >> Asold;
+		//cout << "\033[K \033[1;0H";
+		cout << "Please enter the number of class B seats sold: ";
+		cin >> Bsold;
+		//cout << "\033[K \033[1;0H";
+		cout << "Please enter the number of class C seats sold: ";
+		cin >> Csold;
+
+
+		//cout << "\033[0;0H \033[2J";
+		int total = Asold * Aprice + Bsold * Bprice + Csold * Cprice;
+		cout << "The total income is: " << total << "\n";
+		//cin.get(ch) doesnt seel to work on linux maybe it does on windows
+		cout << "Enter 0 if you want stay.\nEnter anything else to return to the main menu.";
+		cin >> exit;
+		//cin.clear();
+	}
 }
