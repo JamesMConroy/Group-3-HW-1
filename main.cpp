@@ -5,6 +5,7 @@
  *
  ===========================================================================*/
 #include <iostream>
+#include <limits>
 #include "stdafx.h"
 using namespace std;
 
@@ -13,7 +14,7 @@ int main () {
 	while (exit == false) {
 		int select;
 		//clear the window
-		cout << "\033[H \033[2j";
+		cout << "\033[H\033[2J";
 
 		cout << "This is Group 3's Assignment 1\n";
 		cout << "\t1 National Stadium Seating\n";
@@ -23,6 +24,18 @@ int main () {
 		cout << "Enter 0 to exit\n\n";
 		cout << "Enter your selection: ";
 		cin >> select;
+		//input validation loop
+		while (1) {
+			if (cin.fail()) {
+				cin.clear();
+				cin.ignore(numeric_limits<streamsize>::max(), '\n');
+				cout << "Please enter an intiger\n";
+				cin >> select;
+			}
+			if (!cin.fail()) {
+				break;
+			}
+		}
 		switch (select) {
 			case 1:
 				StadiumSeating();
