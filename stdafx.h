@@ -7,6 +7,6 @@
 void AvgRainFall();
 void DollarChange();
 void MagicDate();
-void StadiumSeating();
+void Nationals_Income_Calculator();
 
 #endif
