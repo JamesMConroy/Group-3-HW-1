@@ -38,7 +38,7 @@ int main () {
 		}
 		switch (select) {
 			case 1:
-				StadiumSeating();
+				Nationals_Income_Calculator();
 				break;
 			case 2:
 				AvgRainFall();
