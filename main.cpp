@@ -2,6 +2,7 @@
  *	Group 3 Assignment 1
  *	
  *	James Conroy
+ *	John Kenny
  *
  ===========================================================================*/
 #include <iostream>
