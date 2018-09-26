@@ -3,7 +3,7 @@
 SHELL = /bin/bash
 CC = g++
 CFLAGS = -g -Wall
-OUTP = main.o AvgRainFall.o DollarChange.o MagicDates.o NSSeating.o
+OUTP = main.o AvgRainFall.o DollarChange.o MagicDates.o Nationals_Income_Calculator.o
 
 group3: $(OUTP)
 	g++ $(CFLAGS) -o group3 $(OUTP)
@@ -20,8 +20,8 @@ DollarChange.o: DollarChange.cpp
 MagicDates.o: MagicDates.cpp
 	g++ -c MagicDates.cpp
 
-NSSeating.o: NSSeating.cpp
-	g++ -c NSSeating.cpp
+Nationals_Income_Calculator.o: Nationals_Income_Calculator.cpp
+	g++ -c Nationals_Income_Calculator.cpp
 
 clean:
 	rm group3 $(OUTP)
