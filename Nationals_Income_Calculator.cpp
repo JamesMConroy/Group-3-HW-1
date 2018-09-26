@@ -13,12 +13,11 @@
  *	All values are in American Dollars
  *	===========================================================================*/
 
-#include "pch.h"
 #include <iostream>
 #include <iomanip>
 using namespace std;
 
-int main()
+int Nationals_Income_Calculator()
 {
 	double Total_Income;
 	double Class_A, Class_B, Class_C, Class_A_Price, Class_B_Price, Class_C_Price, Max_Seats;
@@ -60,7 +59,7 @@ int main()
 	{
 		if (cin.fail()) {
 			cout << "That was not a number, please enter a number\n";
-			
+
 			cin.clear();
 			cin.ignore(1000, '\n');
 

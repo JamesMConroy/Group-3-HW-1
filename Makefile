@@ -1,4 +1,5 @@
 #This is a Makefile
+#Don't change it unless you know what you're doing
 
 SHELL = /bin/bash
 CC = g++
