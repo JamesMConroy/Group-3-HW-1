@@ -17,7 +17,7 @@
 #include <iomanip>
 using namespace std;
 
-int Nationals_Income_Calculator()
+void Nationals_Income_Calculator()
 {
 	double Total_Income;
 	double Class_A, Class_B, Class_C, Class_A_Price, Class_B_Price, Class_C_Price, Max_Seats;
@@ -102,5 +102,4 @@ int Nationals_Income_Calculator()
 	//Outputs the income
 	cout << "\nTotal income = $";
 	cout << showpoint << setprecision(2) << fixed << Total_Income << "\n\n\n\n\n";
-	return 0;
 }
