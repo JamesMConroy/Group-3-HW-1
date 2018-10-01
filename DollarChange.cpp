@@ -1,7 +1,7 @@
 /*	=============================================================================
- *	This program asks the user for a number of coins, and calculates wheather those
+ *	This program asks the user for a number of coins, and calculates whether those
  *	coins equal exactly one US Dollar. If the coins do add up to a dollar, the 
- *	program congradulates the user, otherwise the program tells the user if the 
+ *	program congratulates the user, otherwise the program tells the user if the 
  *	entered coins add up to more or less than a dollar, and by how much.
  *
  *	The program only asks for the amount of pennies, nickels, dimes, quarters,
@@ -10,6 +10,7 @@
  *	===========================================================================*/
 #include <iostream>
 #include <iomanip>
+#include "util.h"
 using namespace std;
 
 const int penni = 1;
@@ -19,7 +20,7 @@ const int quart = 25;
 const int halfD = 50;
 const int dollar = 100;
 
-// This function takes the number of different coins and determins if they add up
+// This function takes the number of different coins and determines if they add up
 // to a US greenback. If the coins do then the program returns 0 otherwise it
 // returns the difference, in cents, between the two.
 int isDollar (int nP, int nN, int nD, int nQ, int nH) {
@@ -39,26 +40,26 @@ void DollarChange () {
 	while (exit == false) {
 		int x = 0;
 		int nPenni, nNickle, nDimes, nQuart, nHalfD, difference = 0;
-		cout << "\033[H\033[J";
+		cls();
 		cout << "Let's play a game. \n";
 		cout << "How many pennies do you have? ";
-		cin >> nPenni;
+		nPenni = goodInt(0, 1000);
 		cout << "How many nickles do you have? ";
-		cin >> nNickle;
+		nNickle = goodInt(0, 1000);
 		cout << "How many dimes do you have? ";
-		cin >> nDimes;
+		nDimes = goodInt(0, 1000);
 		cout << "How many quarters do you have? ";
-		cin >> nQuart;
+		nQuart = goodInt(0, 1000);
 		cout << "How many half dollars do you have? ";
-		cin >> nHalfD;
+		nHalfD = goodInt(0, 1000);
 		difference = isDollar (nPenni, nNickle, nDimes, nQuart, nHalfD);
 		if (difference == 0) {
-			cout << "Congradulations !!!\n";
+			cout << "Congratulations !!!\n";
 			cout << "You have exactly one doll hair.\n";
 		} else {
 			cout << "You do not have exactly 1 dollar.\n";
 			if (difference > 0) {
-				cout << "you have more than a dollar.\n";
+				cout << "You have more than a dollar.\n";
 			} else if (difference < 0) {
 				cout << "You have less than a dollar.\n";
 			}

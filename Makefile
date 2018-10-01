@@ -18,7 +18,7 @@ AvgRainFall.o: AvgRainFall.cpp
 DollarChange.o: DollarChange.cpp
 	g++ -c DollarChange.cpp
 
-MagicDates.o: MagicDates.cpp
+MagicDates.o: MagicDates.cpp util.h
 	g++ -c MagicDates.cpp
 
 Nationals_Income_Calculator.o: Nationals_Income_Calculator.cpp
