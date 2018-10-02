@@ -102,4 +102,6 @@ void Nationals_Income_Calculator()
 	//Outputs the income
 	cout << "\nTotal income = $";
 	cout << showpoint << setprecision(2) << fixed << Total_Income << "\n\n\n\n\n";
+	char pause;
+	cin >> pause;
 }
