@@ -1,9 +1,11 @@
 /*	=============================================================================
  *	Group 3 Assignment 1
+ *	Due 10/13/18
  *	
  *	James Conroy
  *	John Kenny
- *
+ *	Carlene Farmer
+ *	Samantha Kershner
  ===========================================================================*/
 #include <iostream>
 #include <limits>
