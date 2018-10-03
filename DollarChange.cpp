@@ -43,15 +43,15 @@ void DollarChange () {
 		cls();
 		cout << "Let's play a game. \n";
 		cout << "How many pennies do you have? ";
-		nPenni = goodInt(0, 1000);
+		nPenni = goodIn(0, 1000);
 		cout << "How many nickles do you have? ";
-		nNickle = goodInt(0, 1000);
+		nNickle = goodIn(0, 1000);
 		cout << "How many dimes do you have? ";
-		nDimes = goodInt(0, 1000);
+		nDimes = goodIn(0, 1000);
 		cout << "How many quarters do you have? ";
-		nQuart = goodInt(0, 1000);
+		nQuart = goodIn(0, 1000);
 		cout << "How many half dollars do you have? ";
-		nHalfD = goodInt(0, 1000);
+		nHalfD = goodIn(0, 1000);
 		difference = isDollar (nPenni, nNickle, nDimes, nQuart, nHalfD);
 		if (difference == 0) {
 			cout << "Congratulations !!!\n";
@@ -65,10 +65,7 @@ void DollarChange () {
 			}
 			cout << "You were off by " << difference << " cents.\n";
 		}
-		cout << "Enter 0 if you want to stay.\nEnter any other number to return to the main menu: ";
-		cin >> x;
-		if (x != 0) {
-			exit = true;
-		}
+
+		exit = exitPrompt();
 	}
 }

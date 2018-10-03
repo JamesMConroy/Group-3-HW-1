@@ -28,7 +28,7 @@ using namespace std;
  *		int value	an int value between the max and min
  */
 
-int goodInt (int min, int max) {
+int goodIn (int min, int max) {
 	int value = 0;
 	if (min >= max || max <= min) {
 		cout << "Some one messed up and the range should be checked";
@@ -51,6 +51,31 @@ int goodInt (int min, int max) {
 	return value;
 }
 
+float goodIn ( float min, float max) {
+	float value;
+	if (min >= max || max <= min) {
+		cout << "Some one messed up and the range should be checked";
+		return value;
+	}
+	cin >> value;
+	while (min > value || max < value || cin.fail()) {
+		if (cin.fail()) {
+			cout << "Please enter an integer\n";
+			cin.clear();
+			cin.ignore(numeric_limits<streamsize>::max(), '\n');
+			cin >> value;
+		}
+		if (value < min || value > max) {
+			cout << "Please enter a number between " << min;
+			cout << " and " << max << '\n';
+			cin >> value;
+		}
+	}
+	return value;
+}
+
+
+
 #ifdef _WIN32
 #include <stdlib.h>
 void cls() {
@@ -63,3 +88,20 @@ void cls() {
 	return;
 }
 #endif
+
+/* This function prompts the user to enter 1 or 0 
+** and returns true or false respectivly.
+** This is used to determin weither or not the user wants to 
+** return to the main menu
+*/
+
+bool exitPrompt () {
+	int exit;
+	cout << "Enter 0 to stay.\nEnter 1 to return to the main menu ";
+	exit = goodIn(0, 1);
+	if (exit == 1) {
+		return true;
+	} else {
+		return false;
+	}
+}

@@ -31,23 +31,19 @@ void MagicDate () {
 		cout << "Please enter all dates in numeric form,";
 		cout << " and only the last two digits of the year.\n";
 		cout << "Please enter your month: ";
-		month = goodInt(1, 12);
+		month = goodIn(1, 12);
 		cout << "Please enter the day: ";
-		day = goodInt(1, 31);
+		day = goodIn(1, 31);
 		cout << "Please enter the year: ";
-		year = goodInt(0, 99);
+		year = goodIn(0, 99);
 
 		if (isMagic(month, day, year) == true) {
 			cout << "\nThat date is magic\n\n";
 		} else {
 			cout << "\nThat date is not magic\n\n";
 		}
-		cout << "Enter 0 if you want to stay.\nEnter any other number to return to the menu:";
-		int x;
-		cin >> x;
-		if (x != 0) {
-			exit = true;
-		}
+
+		exit = exitPrompt();
 	}
 	return;
 }

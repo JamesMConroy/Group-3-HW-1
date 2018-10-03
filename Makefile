@@ -12,16 +12,16 @@ group3: $(OUTP)
 main.o: main.cpp stdafx.h util.h
 	g++ -c main.cpp
 
-AvgRainFall.o: AvgRainFall.cpp
+AvgRainFall.o: AvgRainFall.cpp util.h
 	g++ -c AvgRainFall.cpp
 
-DollarChange.o: DollarChange.cpp
+DollarChange.o: DollarChange.cpp util.h
 	g++ -c DollarChange.cpp
 
 MagicDates.o: MagicDates.cpp util.h
 	g++ -c MagicDates.cpp
 
-Nationals_Income_Calculator.o: Nationals_Income_Calculator.cpp
+Nationals_Income_Calculator.o: Nationals_Income_Calculator.cpp util.h
 	g++ -c Nationals_Income_Calculator.cpp
 
 util.o: util.cpp

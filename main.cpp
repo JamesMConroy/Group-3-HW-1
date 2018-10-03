@@ -25,7 +25,7 @@ int main () {
 		cout << "\t4 Dollar Change\n";
 		cout << "Enter 0 to exit\n\n";
 		cout << "Enter your selection: ";
-		select = goodInt( 0, 4);
+		select = goodIn( 0, 4);
 
 		switch ( select ) {
 			case 1:
