@@ -8,8 +8,10 @@
  *	and half dollars.
  *
  *	===========================================================================*/
+#include "stdafx.h"
 #include <iostream>
 #include <iomanip>
+#include <string>
 #include "util.h"
 using namespace std;
 
