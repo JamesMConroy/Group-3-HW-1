@@ -10,7 +10,9 @@
  *	May 14, 1970 is magic. This is because 5 * 14 = 70
  *
  *	===========================================================================*/
+#include "stdafx.h"
 #include <iostream>
+#include <string>
 #include "util.h"
 using namespace std;
 
