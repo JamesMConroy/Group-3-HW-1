@@ -6,9 +6,12 @@
  *	An example output is:
  *		"The average rainfall for June, July, and August was 3.72 in Washington DC."
  *	===========================================================================*/
+#include "stdafx.h"
 #include <iostream>
+#include <string>
 #include <iomanip>
 #include "util.h"
+
 using namespace std;
 const float MIN = 0.0;
 const float MAX = 100.0;
