@@ -13,8 +13,10 @@
  *	All values are in American Dollars
  *	===========================================================================*/
 
+#include "stdafx.h"
 #include <iostream>
 #include <iomanip>
+#include <string>
 #include "util.h"
 using namespace std;
 
